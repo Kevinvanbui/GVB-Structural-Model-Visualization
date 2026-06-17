@@ -17,7 +17,7 @@ GVB-SMV was developed as a visualization layer that complements existing PLS-SEM
 
 The primary objective of GVB-SMV is not to replace SmartPLS, seminr, or other SEM tools, but rather to improve scientific communication, research transparency, and the visual presentation of empirical findings.
 
-The current version was developed using outputs generated from the seminr (v2.3.7) package in R and has been applied in a study accepted by Tourism Review (Emerald Publishing).
+The current version was developed using outputs generated from the seminr (v2.3.7) package in R and has been applied in a study accepted for publication in Tourism Review (Emerald Publishing, Q1).
 
 
 ---
@@ -31,7 +31,7 @@ GVB-SMV được phát triển như một lớp trực quan hóa bổ sung cho c
 
 Mục tiêu của GVB-SMV không phải là thay thế SmartPLS, seminr hay các phần mềm SEM khác, mà là hỗ trợ nâng cao khả năng truyền đạt học thuật, tăng tính minh bạch của nghiên cứu và cải thiện chất lượng trình bày kết quả trong các công bố khoa học.
 
-Phiên bản hiện tại được phát triển dựa trên kết quả đầu ra từ gói seminr (v2.3.7) trong môi trường R và đã được ứng dụng trong một nghiên cứu được chấp nhận đăng trên Tourism Review (Emerald Publishing).
+Phiên bản hiện tại được phát triển dựa trên kết quả đầu ra từ gói seminr (v2.3.7) trong môi trường R và đã được ứng dụng trong một nghiên cứu được chấp nhận đăng trên Tourism Review (Emerald Publishing, Q1).
 
 
 ---
