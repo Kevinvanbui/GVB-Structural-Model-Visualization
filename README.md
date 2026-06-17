@@ -9,22 +9,30 @@ A custom R-based framework for publication-ready visualization of PLS-SEM result
 ---
 
 ## 🇬🇧 Overview
+GVB Structural Model Visualization (GVB-SMV) is a custom R-based visualization framework developed by Giau V. Bui (GVB) to enhance the communication, interpretation, and dissemination of Partial Least Squares Structural Equation Modeling (PLS-SEM) results.
 
-GVB Structural Model Visualization (GVB-SMV) is a custom R-based visualization framework developed by **Giau V. Bui (GVB)** to improve the communication and interpretation of Partial Least Squares Structural Equation Modeling (PLS-SEM) results.
+Although modern SEM software provides extensive statistical outputs, researchers often need to navigate multiple tables, bootstrap reports, and result windows before obtaining a comprehensive understanding of the structural model. This fragmentation may reduce interpretability and make the communication of findings more challenging, particularly in academic publications.
 
-In many SEM applications, bootstrap outputs are distributed across multiple tables, reports, and software windows. Researchers often need to integrate path coefficients, confidence intervals, significance tests, interaction effects, and explanatory power measures manually before interpreting the overall structural model.
+GVB-SMV was developed as a visualization layer that complements existing PLS-SEM software by integrating key structural model information into a single publication-oriented figure. The framework combines path coefficients, bootstrap confidence intervals, t-values, explanatory power measures (R²), and interaction effects within a unified visual representation.
 
-GVB-SMV was developed to address this challenge by integrating key statistical information into a single publication-oriented figure, thereby enhancing transparency, interpretability, and scientific communication.
+The primary objective of GVB-SMV is not to replace SmartPLS, seminr, or other SEM tools, but rather to improve scientific communication, research transparency, and the visual presentation of empirical findings.
+
+The current version was developed using outputs generated from the seminr (v2.3.7) package in R and has been applied in a study accepted by Tourism Review (Emerald Publishing).
+
 
 ---
 
 ## 🇻🇳 Tổng quan
+GVB Structural Model Visualization (GVB-SMV) là một khung trực quan hóa được phát triển bằng ngôn ngữ R nhằm nâng cao khả năng trình bày, diễn giải và truyền đạt kết quả nghiên cứu sử dụng mô hình PLS-SEM.
 
-GVB Structural Model Visualization (GVB-SMV) là một khung trực quan hóa được phát triển bằng ngôn ngữ R nhằm hỗ trợ trình bày và diễn giải kết quả nghiên cứu PLS-SEM một cách trực quan và hiệu quả hơn.
+Mặc dù các phần mềm SEM hiện nay cung cấp đầy đủ các kết quả thống kê cần thiết, nhà nghiên cứu thường phải tổng hợp thông tin từ nhiều bảng kết quả, báo cáo bootstrap và cửa sổ phân tích khác nhau trước khi có thể hình thành một bức tranh tổng thể về mô hình nghiên cứu. Điều này có thể làm giảm tính trực quan và gây khó khăn trong quá trình truyền đạt kết quả nghiên cứu.
 
-Trong nhiều nghiên cứu PLS-SEM, kết quả bootstrap thường được trình bày rải rác ở nhiều bảng và cửa sổ khác nhau. Nhà nghiên cứu phải tự tổng hợp hệ số đường dẫn, khoảng tin cậy, kiểm định ý nghĩa thống kê, hiệu ứng điều tiết và khả năng giải thích của mô hình trước khi có thể diễn giải kết quả tổng thể.
+GVB-SMV được phát triển như một lớp trực quan hóa bổ sung cho các phần mềm PLS-SEM hiện có, bằng cách tích hợp các thông tin quan trọng của mô hình cấu trúc vào cùng một sơ đồ. Framework này kết hợp hệ số đường dẫn (β), khoảng tin cậy bootstrap (95% CI), giá trị t, hệ số giải thích (R²) và các hiệu ứng điều tiết trong một biểu diễn trực quan thống nhất.
 
-GVB-SMV được phát triển nhằm tích hợp các thông tin này vào cùng một sơ đồ trực quan phục vụ nghiên cứu và công bố khoa học.
+Mục tiêu của GVB-SMV không phải là thay thế SmartPLS, seminr hay các phần mềm SEM khác, mà là hỗ trợ nâng cao khả năng truyền đạt học thuật, tăng tính minh bạch của nghiên cứu và cải thiện chất lượng trình bày kết quả trong các công bố khoa học.
+
+Phiên bản hiện tại được phát triển dựa trên kết quả đầu ra từ gói seminr (v2.3.7) trong môi trường R và đã được ứng dụng trong một nghiên cứu được chấp nhận đăng trên Tourism Review (Emerald Publishing).
+
 
 ---
 
