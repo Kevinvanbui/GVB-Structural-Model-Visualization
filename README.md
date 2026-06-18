@@ -85,7 +85,9 @@ Instead, it aims to complement existing SEM outputs by improving:
 
 # Academic Application
 
-A version of the GVB-SMV framework was applied in a research study accepted by:
+A version of the GVB-SMV framework was applied in a research study accepted for publication in Tourism Review (Emerald Publishing, Scopus Q1).
+
+The framework was used as a visualization tool for communicating structural model results and moderation effects.
 
 **Tourism Review (Emerald Publishing)**
 
