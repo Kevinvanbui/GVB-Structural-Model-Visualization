@@ -89,10 +89,6 @@ A version of the GVB-SMV framework was applied in a research study accepted for 
 
 The framework was used as a visualization tool for communicating structural model results and moderation effects.
 
-**Tourism Review (Emerald Publishing)**
-
-The framework was used as a visualization tool for communicating structural model results and moderation effects.
-
 ---
 
 # Author
