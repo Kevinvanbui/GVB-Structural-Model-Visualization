@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+title: "GVB Structural Model Visualization (GVB-SMV)"
+message: "If you use this framework, please cite it as follows."
+type: software
+
+authors:
+  - family-names: "Bui"
+    given-names: "Giau V."
+    orcid: "https://orcid.org/0009-0002-4547-3162"
+
+version: "1.0"
+
+date-released: "2026-06-17"
+
+repository-code: "https://github.com/Kevinvanbui/GVB-Structural-Model-Visualization"
+
+abstract: >
+  GVB Structural Model Visualization (GVB-SMV) is a custom R-based
+  visualization framework designed to improve the communication and
+  interpretation of PLS-SEM results.
+
+keywords:
+  - PLS-SEM
+  - SEM
+  - SmartPLS
+  - Data Visualization
+  - R Statistics
+  - Open Science
+
+license: MIT
