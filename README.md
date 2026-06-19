@@ -110,27 +110,35 @@ Instead, it aims to complement existing SEM outputs by improving:
 - Open science dissemination
 
 ---
+## Academic Application and Research Adoption
 
-# Academic Application
+GVB-SMV has been used as a visualization framework for presenting structural model and moderation analysis results in academic research.
 
-A version of the GVB-SMV framework was applied in a research study accepted for publication in **Tourism Review** (Emerald Publishing, Scopus Q1).
-
-The framework was used as a visualization tool for communicating structural model results and moderation effects.
+The framework has also been adopted by external researchers to support the communication of PLS-SEM findings in peer-reviewed publications.
 
 ---
+## License and Use
 
-# Author
+GVB-SMV is released under the MIT License.
 
-**Giau V. Bui (GVB)**
+Researchers are welcome to use, adapt, and extend the framework provided that appropriate attribution is given to the original author.
+
+---
+## Author
+
+Giau V. Bui (GVB)
+
+Independent Researcher
 
 Research Interests:
 
-* Data Science
-* Artificial Intelligence
-* Digital Economy
-* Research Methods
-* PLS-SEM
-* Statistical Visualization
+- Data Science
+- Artificial Intelligence
+- Digital Economy
+- PLS-SEM
+- Statistical Visualization
+- Research Methods
+
 
 ORCID:
 
