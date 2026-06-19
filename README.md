@@ -9,37 +9,36 @@ A custom R-based framework for publication-ready visualization of PLS-SEM result
 ---
 
 ## 🇬🇧 Overview
-GVB Structural Model Visualization (GVB-SMV) is a custom R-based visualization framework developed by Giau V. Bui (GVB) to enhance the communication, interpretation, and dissemination of Partial Least Squares Structural Equation Modeling (PLS-SEM) results.
+
+GVB Structural Model Visualization (GVB-SMV) is a custom R-based visualization framework developed by **Giau V. Bui (GVB)** to enhance the communication, interpretation, and dissemination of Partial Least Squares Structural Equation Modeling (PLS-SEM) results.
 
 Although modern SEM software provides extensive statistical outputs, researchers often need to navigate multiple tables, bootstrap reports, and result windows before obtaining a comprehensive understanding of the structural model. This fragmentation may reduce interpretability and make the communication of findings more challenging, particularly in academic publications.
 
 GVB-SMV was developed as a visualization layer that complements existing PLS-SEM software by integrating key structural model information into a single publication-oriented figure. The framework combines path coefficients, bootstrap confidence intervals, t-values, explanatory power measures (R²), and interaction effects within a unified visual representation.
 
-The primary objective of GVB-SMV is not to replace SmartPLS, seminr, or other SEM tools, but rather to improve scientific communication, research transparency, and the visual presentation of empirical findings.
+The primary objective of GVB-SMV is not to replace SmartPLS, `seminr`, or other SEM tools, but rather to improve scientific communication, research transparency, and the visual presentation of empirical findings. GVB-SMV focuses on integrating statistical information that is often distributed across multiple SEM outputs into a unified publication-ready visualization.
 
-The current version was developed using outputs generated from the seminr (v2.3.7) package in R and has been applied in a study accepted for publication in Tourism Review (Emerald Publishing, Q1).
-
+The current version was developed using outputs generated from the `seminr` package, version 2.3.7, in R and has been applied in a study accepted for publication in **Tourism Review** (Emerald Publishing, Scopus Q1).
 
 ---
 
 ## 🇻🇳 Tổng quan
+
 GVB Structural Model Visualization (GVB-SMV) là một khung trực quan hóa được phát triển bằng ngôn ngữ R nhằm nâng cao khả năng trình bày, diễn giải và truyền đạt kết quả nghiên cứu sử dụng mô hình PLS-SEM.
 
 Mặc dù các phần mềm SEM hiện nay cung cấp đầy đủ các kết quả thống kê cần thiết, nhà nghiên cứu thường phải tổng hợp thông tin từ nhiều bảng kết quả, báo cáo bootstrap và cửa sổ phân tích khác nhau trước khi có thể hình thành một bức tranh tổng thể về mô hình nghiên cứu. Điều này có thể làm giảm tính trực quan và gây khó khăn trong quá trình truyền đạt kết quả nghiên cứu.
 
 GVB-SMV được phát triển như một lớp trực quan hóa bổ sung cho các phần mềm PLS-SEM hiện có, bằng cách tích hợp các thông tin quan trọng của mô hình cấu trúc vào cùng một sơ đồ. Framework này kết hợp hệ số đường dẫn (β), khoảng tin cậy bootstrap (95% CI), giá trị t, hệ số giải thích (R²) và các hiệu ứng điều tiết trong một biểu diễn trực quan thống nhất.
 
-Mục tiêu của GVB-SMV không phải là thay thế SmartPLS, seminr hay các phần mềm SEM khác, mà là hỗ trợ nâng cao khả năng truyền đạt học thuật, tăng tính minh bạch của nghiên cứu và cải thiện chất lượng trình bày kết quả trong các công bố khoa học.
+Mục tiêu của GVB-SMV không phải là thay thế SmartPLS, `seminr` hay các phần mềm SEM khác, mà là hỗ trợ nâng cao khả năng truyền đạt học thuật, tăng tính minh bạch của nghiên cứu và cải thiện chất lượng trình bày kết quả trong các công bố khoa học. GVB-SMV tập trung vào việc tích hợp các thông tin thống kê thường bị phân tán ở nhiều đầu ra SEM khác nhau vào một hình trực quan thống nhất, sẵn sàng cho công bố học thuật.
 
-Phiên bản hiện tại được phát triển dựa trên kết quả đầu ra từ gói seminr (v2.3.7) trong môi trường R và đã được ứng dụng trong một nghiên cứu được chấp nhận đăng trên Tourism Review (Emerald Publishing, Q1).
-
+Phiên bản hiện tại được phát triển dựa trên kết quả đầu ra từ gói `seminr`, phiên bản 2.3.7, trong môi trường R và đã được ứng dụng trong một nghiên cứu được chấp nhận đăng trên **Tourism Review** (Emerald Publishing, Scopus Q1).
 
 ---
 
 # Key Features
 
 GVB-SMV integrates multiple structural model outputs into a single publication-ready figure:
-
 - Standardized Path Coefficients (β)
 - Bootstrap Confidence Intervals (95% CI)
 - t-values
@@ -53,25 +52,53 @@ GVB-SMV integrates multiple structural model outputs into a single publication-r
 
 # Example Visualization
 
-## Structural Model Visualization
-
-![GVB-SMV Framework](GVB_SMV_v1.0.png)
-
-The figure integrates path coefficients, confidence intervals, t-values, interaction effects, and explanatory power measures into a single structural model.
+This section illustrates how GVB-SMV complements conventional SEM visualization by integrating statistical information that is often distributed across multiple outputs.
 
 ---
 
-## Moderation Analysis Visualization
+## 1. Conventional SEM Output (SmartPLS)
 
-![GVB-SMV Slope Plot](GVB_SMV_SlopePlot.png)
+![Conventional SEM Output from SmartPLS](SmartPLS.png)
 
-GVB-SMV also supports moderation effect visualization through simple slope analysis, facilitating the interpretation of interaction mechanisms within structural models.
+The figure above illustrates a conventional structural model visualization generated by SmartPLS. This type of diagram commonly presents standardized path coefficients, outer loadings, and explanatory power measures such as R².
+
+Although these outputs are essential for SEM analysis, additional information such as bootstrap confidence intervals, t-values, significance levels, and moderation effects is usually reported in separate tables, reports, or result windows. As a result, researchers often need to combine multiple outputs manually before interpreting the overall structural model.
+
+---
+
+## 2. GVB Structural Model Visualization (GVB-SMV)
+
+![GVB-SMV Framework](GVB_SMV_v1.0.png)
+
+The figure above presents the GVB-SMV structural model visualization. Compared with conventional SEM diagrams, GVB-SMV integrates multiple statistical outputs into a single publication-oriented figure.
+
+The visualization combines:
+
+- Standardized Path Coefficients (β)
+- Bootstrap Confidence Intervals (95% CI)
+- t-values
+- Significance Indicators
+- Moderating / Interaction Effects
+- R² Values
+- Visual Emphasis Based on Effect Strength
+
+This integrated representation allows researchers to interpret structural relationships, statistical significance, explanatory power, and interaction effects within a unified visual framework.
+
+---
+
+## 3. Moderation Analysis Visualization
+
+![GVB-SMV Simple Slope Plot](GVB_SMV_SlopePlot.png)
+
+The figure above illustrates the moderation analysis component of GVB-SMV through simple slope visualization.
+
+This visualization helps researchers examine how the relationship between variables changes across different levels of a moderator. Compared with numerical moderation tables alone, simple slope plots provide a clearer and more intuitive interpretation of interaction effects.
 
 ---
 
 # Purpose
 
-GVB-SMV is **not intended to replace SmartPLS or other SEM software**.
+GVB-SMV is **not intended to replace SmartPLS, `seminr`, or other SEM software**.
 
 Instead, it aims to complement existing SEM outputs by improving:
 
@@ -85,7 +112,7 @@ Instead, it aims to complement existing SEM outputs by improving:
 
 # Academic Application
 
-A version of the GVB-SMV framework was applied in a research study accepted for publication in Tourism Review (Emerald Publishing, Scopus Q1).
+A version of the GVB-SMV framework was applied in a research study accepted for publication in **Tourism Review** (Emerald Publishing, Scopus Q1).
 
 The framework was used as a visualization tool for communicating structural model results and moderation effects.
 
@@ -97,12 +124,12 @@ The framework was used as a visualization tool for communicating structural mode
 
 Research Interests:
 
-- Data Science
-- Artificial Intelligence
-- Digital Economy
-- Research Methods
-- PLS-SEM
-- Statistical Visualization
+* Data Science
+* Artificial Intelligence
+* Digital Economy
+* Research Methods
+* PLS-SEM
+* Statistical Visualization
 
 ORCID:
 
@@ -114,11 +141,7 @@ https://orcid.org/0009-0002-4547-3162
 
 If you use GVB-SMV in your research, please cite:
 
-Bui, G. V. (2026).
-
-GVB Structural Model Visualization (GVB-SMV) v1.0.
-
-GitHub Repository.
+Bui, G. V. (2026). *GVB Structural Model Visualization (GVB-SMV) v1.0*. GitHub Repository.
 
 https://github.com/Kevinvanbui/GVB-Structural-Model-Visualization
 
@@ -134,4 +157,4 @@ Release Date: June 2026
 
 # Keywords
 
-PLS-SEM • SEM • SmartPLS • Data Visualization • R Statistics • Moderation Analysis • Structural Equation Modeling • Research Methods • Academic Publishing • Open Science
+PLS-SEM • SEM • SmartPLS • seminr • Data Visualization • R Statistics • Moderation Analysis • Structural Equation Modeling • Research Methods • Academic Publishing • Open Science
