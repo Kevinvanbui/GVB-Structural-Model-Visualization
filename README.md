@@ -39,6 +39,7 @@ Phiên bản hiện tại được phát triển dựa trên kết quả đầu 
 # Key Features
 
 GVB-SMV integrates multiple structural model outputs into a single publication-ready figure:
+
 - Standardized Path Coefficients (β)
 - Bootstrap Confidence Intervals (95% CI)
 - t-values
