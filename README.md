@@ -7,32 +7,37 @@ A custom R-based framework for publication-ready visualization of PLS-SEM result
 ![GVB-SMV Framework](GVB_SMV_v1.0.png)
 
 ---
-
 ## 🇬🇧 Overview
 
-GVB Structural Model Visualization (GVB-SMV) is a custom R-based visualization framework developed by **Giau V. Bui (GVB)** to enhance the communication, interpretation, and dissemination of Partial Least Squares Structural Equation Modeling (PLS-SEM) results.
+GVB Structural Model Visualization (GVB-SMV) is a custom R-based visualization framework developed by **Giau V. Bui (GVB)** to improve the communication, interpretation, and dissemination of Partial Least Squares Structural Equation Modeling (PLS-SEM) results.
 
-Although modern SEM software provides extensive statistical outputs, researchers often need to navigate multiple tables, bootstrap reports, and result windows before obtaining a comprehensive understanding of the structural model. This fragmentation may reduce interpretability and make the communication of findings more challenging, particularly in academic publications.
+Although modern SEM software provides comprehensive statistical outputs, researchers often need to navigate multiple tables, bootstrap reports, and result windows before obtaining a complete understanding of the structural model. This fragmented workflow can reduce interpretability and make the communication of research findings more challenging, particularly in publication-oriented studies.
 
-GVB-SMV was developed as a visualization layer that complements existing PLS-SEM software by integrating key structural model information into a single publication-oriented figure. The framework combines path coefficients, bootstrap confidence intervals, t-values, explanatory power measures (R²), and interaction effects within a unified visual representation.
+GVB-SMV was developed as a visualization layer that complements existing PLS-SEM software by integrating key statistical outputs into a single publication-ready figure. The framework combines standardized path coefficients (β), bootstrap confidence intervals (95% CI), t-values, explanatory power measures (R²), significance indicators, and moderation effects within a unified visual representation.
 
-The primary objective of GVB-SMV is not to replace SmartPLS, `seminr`, or other SEM tools, but rather to improve scientific communication, research transparency, and the visual presentation of empirical findings. GVB-SMV focuses on integrating statistical information that is often distributed across multiple SEM outputs into a unified publication-ready visualization.
+Rather than replacing SmartPLS, `seminr`, or other SEM software, GVB-SMV aims to enhance scientific communication, improve research transparency, and facilitate the visual presentation of empirical findings. By consolidating statistical information that is typically distributed across multiple SEM outputs, the framework enables researchers to interpret structural relationships more efficiently and communicate results more effectively.
 
-The current version was developed using outputs generated from the `seminr` package, version 2.3.7, in R and has been applied in a study accepted for publication in **Tourism Review** (Emerald Publishing, Scopus Q1).
+The current version was developed using outputs generated from the `seminr` package (version 2.3.7) in R. GVB-SMV has been successfully applied to support publication-oriented visualization in peer-reviewed research, including the article **"The metaverse effect: can virtual tourism experiences drive actual visits?"**, published in *Tourism Review* (Emerald Publishing).
+
+
+This repository provides the official public release of GVB-SMV as an open-source visualization framework for researchers using PLS-SEM in academic and applied research.
 
 ---
 
 ## 🇻🇳 Tổng quan
 
-GVB Structural Model Visualization (GVB-SMV) là một khung trực quan hóa được phát triển bằng ngôn ngữ R nhằm nâng cao khả năng trình bày, diễn giải và truyền đạt kết quả nghiên cứu sử dụng mô hình PLS-SEM.
+GVB Structural Model Visualization (GVB-SMV) là một khung trực quan hóa tùy chỉnh được phát triển bằng ngôn ngữ R bởi **Giau V. Bui (GVB)** nhằm nâng cao khả năng truyền đạt, diễn giải và phổ biến kết quả nghiên cứu sử dụng mô hình bình phương tối thiểu từng phần trong mô hình phương trình cấu trúc (Partial Least Squares Structural Equation Modeling – PLS-SEM).
 
-Mặc dù các phần mềm SEM hiện nay cung cấp đầy đủ các kết quả thống kê cần thiết, nhà nghiên cứu thường phải tổng hợp thông tin từ nhiều bảng kết quả, báo cáo bootstrap và cửa sổ phân tích khác nhau trước khi có thể hình thành một bức tranh tổng thể về mô hình nghiên cứu. Điều này có thể làm giảm tính trực quan và gây khó khăn trong quá trình truyền đạt kết quả nghiên cứu.
+Mặc dù các phần mềm SEM hiện đại cung cấp đầy đủ các kết quả thống kê, nhà nghiên cứu thường phải xem xét nhiều bảng kết quả, báo cáo bootstrap và cửa sổ phân tích khác nhau trước khi có được cái nhìn toàn diện về mô hình cấu trúc. Quy trình phân tán này có thể làm giảm tính trực quan và gây khó khăn trong việc truyền đạt kết quả nghiên cứu, đặc biệt trong các công bố học thuật.
 
-GVB-SMV được phát triển như một lớp trực quan hóa bổ sung cho các phần mềm PLS-SEM hiện có, bằng cách tích hợp các thông tin quan trọng của mô hình cấu trúc vào cùng một sơ đồ. Framework này kết hợp hệ số đường dẫn (β), khoảng tin cậy bootstrap (95% CI), giá trị t, hệ số giải thích (R²) và các hiệu ứng điều tiết trong một biểu diễn trực quan thống nhất.
+GVB-SMV được phát triển như một lớp trực quan hóa bổ sung cho các phần mềm PLS-SEM hiện có bằng cách tích hợp các kết quả thống kê quan trọng vào một hình trực quan duy nhất, sẵn sàng cho công bố. Framework này kết hợp hệ số đường dẫn chuẩn hóa (β), khoảng tin cậy bootstrap (95% CI), giá trị *t*, hệ số giải thích (R²), chỉ báo ý nghĩa thống kê và các hiệu ứng điều tiết trong một biểu diễn trực quan thống nhất.
 
-Mục tiêu của GVB-SMV không phải là thay thế SmartPLS, `seminr` hay các phần mềm SEM khác, mà là hỗ trợ nâng cao khả năng truyền đạt học thuật, tăng tính minh bạch của nghiên cứu và cải thiện chất lượng trình bày kết quả trong các công bố khoa học. GVB-SMV tập trung vào việc tích hợp các thông tin thống kê thường bị phân tán ở nhiều đầu ra SEM khác nhau vào một hình trực quan thống nhất, sẵn sàng cho công bố học thuật.
+Thay vì thay thế SmartPLS, `seminr` hay các phần mềm SEM khác, GVB-SMV hướng đến việc nâng cao khả năng truyền đạt khoa học, cải thiện tính minh bạch của nghiên cứu và hỗ trợ trình bày trực quan các kết quả thực nghiệm. Bằng cách tổng hợp các thông tin thống kê vốn thường phân tán ở nhiều đầu ra SEM khác nhau, framework giúp nhà nghiên cứu diễn giải các mối quan hệ cấu trúc hiệu quả hơn và truyền đạt kết quả rõ ràng hơn.
 
-Phiên bản hiện tại được phát triển dựa trên kết quả đầu ra từ gói `seminr`, phiên bản 2.3.7, trong môi trường R và đã được ứng dụng trong một nghiên cứu được chấp nhận đăng trên **Tourism Review** (Emerald Publishing, Scopus Q1).
+Phiên bản hiện tại được phát triển dựa trên các kết quả đầu ra từ gói `seminr` (phiên bản 2.3.7) trong môi trường R. GVB-SMV đã được áp dụng để hỗ trợ trực quan hóa kết quả phục vụ công bố trong các nghiên cứu đã qua bình duyệt, bao gồm bài báo **“The metaverse effect: can virtual tourism experiences drive actual visits?”**, được xuất bản trên *Tourism Review* của Emerald Publishing.
+
+Kho lưu trữ này cung cấp phiên bản phát hành công khai chính thức của GVB-SMV dưới dạng một framework trực quan hóa mã nguồn mở dành cho các nhà nghiên cứu sử dụng PLS-SEM trong nghiên cứu học thuật và nghiên cứu ứng dụng.
+
 
 ---
 
@@ -112,9 +117,21 @@ Instead, it aims to complement existing SEM outputs by improving:
 ---
 ## Academic Application and Research Adoption
 
-GVB-SMV has been used as a visualization framework for presenting structural model and moderation analysis results in academic research.
+GVB-SMV has been applied to support the publication-oriented visualization of PLS-SEM structural model and moderation analysis results in peer-reviewed academic research.
 
-The framework has also been adopted by external researchers to support the communication of PLS-SEM findings in peer-reviewed publications.
+### Published Application
+
+Huynh, A. D. T., Pham, T. H., Quach, H. V., and Le, Q. T. C. (2026).
+
+*The metaverse effect: can virtual tourism experiences drive actual visits?*
+
+*Tourism Review*, ahead-of-print. Emerald Publishing.
+
+https://doi.org/10.1108/TR-10-2025-1273
+
+In this study, the GVB-SMV visualization approach was used to present the structural model and moderation analysis results. The publication-oriented figures integrate standardized path coefficients, bootstrap confidence intervals, t-values, significance indicators, interaction effects, and R² values within unified structural model diagrams.
+
+This published application demonstrates the practical value of GVB-SMV for communicating complex PLS-SEM findings clearly and effectively in peer-reviewed academic research.
 
 ---
 ## License and Use
